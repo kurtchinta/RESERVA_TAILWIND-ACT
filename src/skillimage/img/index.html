@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+<link rel="icon" href="favicon.ico">
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+
+<style type="text/tailwindcss">
+    @layer utilities {
+        body{
+    font-family: 'poppins', sans-serif;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+.left-50{
+    left: 50%;
+}
+
+.right-50{
+    right: 50%;
+}
+.top-50{
+    top: 50%;
+}
+
+.nav-dot{
+    transition: background 200ms , border-color 200ms;
+}
+
+.selected-circle{
+    background-color: blueviolet;
+}
+
+.nav-dot:hover span{
+   opacity: 1; 
+}
+
+.left-percentage{
+    left: 5%;
+}
+
+.z-1{
+    z-index: -1;
+}
+      }
+    
+  </style>
+
+</head>
+<body class="bg-black text-white font-poppins p-12 ">
+   <header class="py-1">
+    <div class="container  flex justify-between items-center  mx-auto px-6 md:px-5 lg:px-24 w-full ">
+        <div class="text-lg ">Personal Website</div>
+        <div class="hidden md:flex space-x-10">
+            <a href="#" class="text-violet-700">Home</a>
+            <a href="#about">About me</a>
+            <a href="#skill">My skills</a>
+            <a href="#hire"><button class="hover:bg-white hover:text-violet-700 bg-violet-700 px-2 text-white font-bold">Hire me</button></a>
+        </div>
+        <div class=" md:hidden">
+            <img src="list.png" alt="menu" class="w-5">
+        </div>
+    </div>
+   </header >
+   <!-- header end-->
+   <!--1st conatiner body start...hero section nav etc-->
+
+<div class="container flex justify-between items-center mt-24 md:mt-5 mx-auto px-3 md:px-5 lg:px-24 w-full ">
+    <div class="flex flex-wrap md:flex-nowrap">
+
+<!--navigation bar in form of dot-->
+        <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage mt-3 md:mt-40 lg:mt-44">
+
+            <div class="absolute left-50 transform -translate-x-1/2 space-y-6">
+                    <a href="#"  id="home" class="nav-dot selected-circle block w-3 h-3 rounded-full border-1 border-b-slate-700 bg-zinc-700">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">HOME</span>
+                    </a>
+
+                    <a href="#about" class="nav-dot block w-3 h-3 rounded-full border-1 border-b-slate-700 bg-zinc-700">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">ABOUT_ME</span>
+                    </a>
+
+                    <a href="#skill" class="nav-dot block w-3 h-3 rounded-full border-1 border-b-slate-700 bg-zinc-700">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">MY_SKILLS</span>
+                    </a>
+
+
+                    <a href="#hire" class="nav-dot block w-3 h-3 rounded-full border-1 border-b-slate-700 bg-zinc-700">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">HIRE_ME</span>
+                    </a>
+            </div>
+        </nav>
+        <!--hero section...-->
+
+        <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36 ">
+
+            <h1  class="font-bold text-4xl font-serif md:text-5xl lg:text-6xl text-center md:text-left">Hello! <br>
+                I'm Kurt Reserva</h1>
+
+            <div class=" w-full flex justify-center md:justify-start">
+                <a href="#skill">
+                <button class="px-8 py-4 flex bg-violet-700 text-white hover:bg-white hover:text-violet-700 font-bold mt-12  item-center space-x-3">
+                    <span class="">My Skills</span>
+                </button>
+            </a>
+             </div>
+             <img src="blck.png" alt="me" class=" md:w-3/4 justify-center -mt-20 md:absolute md:-mt-20 right-0 md:mt-0  z-1">   
+        </div>
+
+       
+
+    </div>
+</div>
+
+<!--about me...-->
+<div class="container mt-32 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full  ">
+    <section class="w-full">
+        <h2 id="about" class="font-bold text-violet-700 text-3xl ">ABOUT ME</h2>
+        
+        <div class="md:flex justify-between gap-10 space-y-10 mt-10">
+            <div class="lg:max-w-lg md:w-1/2 w-5/6 flex justify-center border-2 border-violet-700">
+                <img src="skillimage/IMG_20240615_190609_557.jpg" class="object-cover object-center " alt="my_photo">
+            </div>
+            <div class="text-center md:text-left md:mt-10  space-y-3 mt-4  ">
+                <p class="text-white text-xl "> FULL-STACK DEVELOPER & PROGRAMMER
+                </p>
+                <br>
+                <p class="text-white ">
+                    I'm a programmer with a strong understanding of coding, and I enjoy focusing on small details and optimizing my work. As a developer, I aim to create user-friendly experiences and am passionate about building high-quality software.
+                <div class="flex justify-center md:justify-start">
+                    <a href="resumemonali.pdf">
+                    <button class="px-8 py-4 flex bg-violet-700 text-white hover:bg-white hover:text-violet-700 font-bold mt-12  item-center space-x-3">
+                        <span class="">DOWNLOAD CV</span>
+                    </button>
+                    </a>
+
+                </div>
+             </div>
+        </div>
+
+        <div class=" mt-20 w-full"> 
+            <div class="border-violet-700 border-2 w-full p-16 lg:py-20 lg:px-32 lg:space-x-32">
+                <p class="text-xl md:text-center text-violet-700">Academic details:-</p>
+            <br>
+                <ul style="list-style-type:circle;">
+                
+                    <li class="">GURU TEGH BAHADUR INSTITUTE OF TECHNOLOGY - DELHI</li> 
+                    <ul>
+                        <li>- B-tech, CSE (2020-24)</li>
+                        <li>- CGPA - 9</li>
+                    </ul>
+                    <br>
+                    <li>NEW HORIZON PUBLIC SCHOOL - BHAGALPUR, BIHAR
+                        </li>
+                        <ul>
+                            <li>- Class 12th (2019)</li>
+                            <li>- Percentage - 82.4%</li>
+                        </ul>
+                        <br>
+                    <li>ADWAITA MISSION HIGH SCHOOL - BANKA, BIHAR</li>
+                    <ul>
+                        <li>- Class 10th (2017)</li>
+                        <li>- CGPA - 10</li>
+                    </ul>
+                </ul>
+
+            </div>
+            <div class="border-violet-700 border-2 mt-10 w-full p-16 lg:py-20 lg:px-32 lg:space-x-32">
+                <p class="text-xl md:text-center text-violet-700">Extra curricular details:-</p>
+            <br>
+                <ul style="list-style-type:circle;">
+                    <li>Member of PRISMA society of GTBIT.</li>
+                    <br>
+                    <li>Winner of drawing competitions in primary school and secondary school  held by company like chamel</li>
+                    <br>
+                    <li>Winner of sport event like kho-kho, khabadi in 10th class. </li>
+                    </ul>
+                    </div>
+
+                  
+                    </div>
+        </div>
+</section>
+</div>
+
+<!--my skills....-->
+<div class="container mt-32 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full  ">
+    <section class="w-full  ">
+    <h2 id="skill" class="font-bold text-violet-700 text-3xl">MY SKILLS</h2>
+    
+    <p class="text-white ">
+        I love developing new skills as it doubles the odds of success :)
+        <br>
+        These are my present skills :-
+       
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 ">
+    <img src="skillimage/c.jpeg" alt="hehehe">
+    <img src="skillimage/dsa.jpeg" alt="hehehe">
+    <img src="skillimage/html.jpeg" alt="hehehe">
+    <img src="skillimage/css.jpeg" alt="hehehe">
+    <img src="skillimage/tailwind.jpeg" alt="hehehe">
+    <img src="skillimage/jss.jpeg" alt="hehehe">
+   
+    
+    </div>
+    </section>
+    </div>
+    
+    
+    
+    <!--hire me-->
+    <div  class="container mt-32 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full  ">
+        <section class="w-full  ">
+            <h2 id="hire" class=" font-bold text-violet-700 text-3xl">HIRE ME</h2>
+    
+        <p class="text-white  ">
+           Ready to start a journey together?
+           <br>
+           Fill the form below and let's connect!
+        </p>
+    
+    <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16">
+        <!--hire me box-->
+        <form  class="space-y-12"  action="mailto:monali298sanand@gmail.com" method="post" enctype="text/plain">
+            <div>
+                <label for="" class="text-white block mb-6 text-xl font-bold">YOUR NAME</label>
+                <input autocomplete="off" type="text" name="Your name " id="" class="w-full border text-black  px-4 py-4 ">
+            </div>
+    
+            <div>
+                <label for="" class="text-white block mb-6 text-xl font-bold">YOUR EMAIL</label>
+                <input autocomplete="off" type="gmail" name="Your email " id="" class="w-full border text-black  px-4 py-4 ">
+            </div>
+    
+            <div>
+                <label for="" class="text-white block mb-6 text-xl font-bold">YOUR MESSAGE</label>
+                <textarea autocomplete="off" type="message" rows="4" name="Your message " id="" class="w-full border text-black  px-4 py-4 "> </textarea>
+                
+            </div>
+           
+            <div>
+                <button class="hover:bg-white hover:text-violet-700 bg-violet-700 px-4 py-3 text-white text-xl font-bold"> <input type="submit"> </button>
+            </div>
+    
+        </form>
+        <!--hire me box end and contact detail start-->
+        <div class="mt-40 ">
+            <p  class="text-zinc-600">My contact details:-</p>
+        <p  class="text-zinc-600">(91+)6207915099</p>
+        <a href="#" class="text-zinc-600 underline">monali298sanand@gmail.com</a>
+            
+            <div class="flex mt-10 space-x-10">
+            <a href="https://www.linkedin.com/in/monali-sanand-318764210/" ><img src="linkedin-icon-logo-png-transparent.png" width="40px" height="40px" alt=""></a>
+            <a href="https://github.com/Monalisanand298" ><img src="github_PNG28.png" width="40px" height="40px" alt=""></a>
+        </div>
+        </div>
+        
+    
+    </div>
+    
+
+</body>
+</html>
