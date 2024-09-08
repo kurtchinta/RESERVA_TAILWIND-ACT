@@ -4,8 +4,55 @@
 
 html{
     scroll-behavior: smooth;
+    width: 100%;
 }
+
 
 body{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.typedText{
+    text-transform: capitalize;
+}
+
+@layer utilities {
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .left-50 {
+        left: 50%;
+    }
+
+    .right-50 {
+        right: 50%;
+    }
+
+    .top-50 {
+        top: 50%;
+    }
+
+    .nav-dot {
+        transition: background 200ms, border-color 200ms;
+    }
+
+    .selected-circle {
+        background-color: blueviolet;
+    }
+
+    .nav-dot:hover span {
+        opacity: 1; 
+    }
+
+    .left-percentage {
+        left: 5%;
+    }
+
+    .z-1 {
+        z-index: -1;
+    }
 }

@@ -600,8 +600,16 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .left-10 {
   left: 2.5rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-8 {
@@ -617,6 +625,10 @@ video {
 .my-9 {
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-4 {
@@ -683,6 +695,10 @@ video {
   height: 1rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -738,6 +754,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -832,6 +852,11 @@ video {
   background-repeat: no-repeat;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-12 {
   padding: 3rem;
 }
@@ -916,6 +941,10 @@ video {
   font-weight: 600;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .text-blue-400 {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
@@ -971,6 +1000,64 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.left-50 {
+  left: 50%;
+}
+
+.right-50 {
+  right: 50%;
+}
+
+.top-50 {
+  top: 50%;
+}
+
+.nav-dot {
+  transition: background 200ms, border-color 200ms;
+}
+
+.selected-circle {
+  background-color: blueviolet;
+}
+
+.nav-dot:hover span {
+  opacity: 1;
+}
+
+.left-percentage {
+  left: 5%;
+}
+
+.z-1 {
+  z-index: -1;
+}
+
+html{
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.typedText{
+  text-transform: capitalize;
 }
 
 .hover\:scale-125:hover {
@@ -1142,6 +1229,11 @@ video {
 
   .lg\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 }
